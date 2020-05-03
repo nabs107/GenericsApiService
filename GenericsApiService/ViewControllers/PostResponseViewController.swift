@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PostResponseViewController.swift
 //  GenericsApiService
 //
 //  Created by Nabin Shrestha on 5/3/20.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class PostResponseViewController: UIViewController {
+    
+    @IBOutlet weak var idLabel: UILabel!
+    
+    var id: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.idLabel.text = id?.description
     }
 
-
 }
-

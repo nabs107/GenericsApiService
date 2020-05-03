@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		8C768F2A245ECFB000505217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C768F28245ECFB000505217 /* Main.storyboard */; };
 		8C768F2C245ECFB500505217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C768F2B245ECFB500505217 /* Assets.xcassets */; };
 		8C768F2F245ECFB500505217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C768F2D245ECFB500505217 /* LaunchScreen.storyboard */; };
+		8C768F37245EE93200505217 /* GetResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F36245EE93200505217 /* GetResultViewController.swift */; };
+		8C768F39245EE9BC00505217 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F38245EE9BC00505217 /* ImageCell.swift */; };
+		8C768F3C245EEBE800505217 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8C768F3B245EEBE800505217 /* SDWebImage */; };
+		8C768F3F245EFB9600505217 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F3E245EFB9600505217 /* APIService.swift */; };
+		8C768F42245EFCC600505217 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F41245EFCC600505217 /* Images.swift */; };
+		8C768F44245F014300505217 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F43245F014300505217 /* User.swift */; };
+		8C768F49245F039700505217 /* PostResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F48245F039700505217 /* PostResponseViewController.swift */; };
+		8C768F4C245F054800505217 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F4B245F054800505217 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		8C768F2B245ECFB500505217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C768F2E245ECFB500505217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C768F30245ECFB500505217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C768F36245EE93200505217 /* GetResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetResultViewController.swift; sourceTree = "<group>"; };
+		8C768F38245EE9BC00505217 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		8C768F3E245EFB9600505217 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8C768F41245EFCC600505217 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		8C768F43245F014300505217 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8C768F48245F039700505217 /* PostResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponseViewController.swift; sourceTree = "<group>"; };
+		8C768F4B245F054800505217 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C768F3C245EEBE800505217 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,70 @@
 		8C768F21245ECFB000505217 /* GenericsApiService */ = {
 			isa = PBXGroup;
 			children = (
+				8C768F4A245F052F00505217 /* Helpers */,
+				8C768F47245F036C00505217 /* Storyboards */,
+				8C768F46245F035E00505217 /* Cells */,
+				8C768F45245F034C00505217 /* ViewControllers */,
+				8C768F40245EFCBA00505217 /* Model */,
+				8C768F3D245EF8CA00505217 /* Network */,
 				8C768F22245ECFB000505217 /* AppDelegate.swift */,
 				8C768F24245ECFB000505217 /* SceneDelegate.swift */,
-				8C768F26245ECFB000505217 /* ViewController.swift */,
-				8C768F28245ECFB000505217 /* Main.storyboard */,
 				8C768F2B245ECFB500505217 /* Assets.xcassets */,
 				8C768F2D245ECFB500505217 /* LaunchScreen.storyboard */,
 				8C768F30245ECFB500505217 /* Info.plist */,
 			);
 			path = GenericsApiService;
+			sourceTree = "<group>";
+		};
+		8C768F3D245EF8CA00505217 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8C768F3E245EFB9600505217 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8C768F40245EFCBA00505217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C768F41245EFCC600505217 /* Images.swift */,
+				8C768F43245F014300505217 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C768F45245F034C00505217 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C768F26245ECFB000505217 /* ViewController.swift */,
+				8C768F36245EE93200505217 /* GetResultViewController.swift */,
+				8C768F48245F039700505217 /* PostResponseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C768F46245F035E00505217 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C768F38245EE9BC00505217 /* ImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C768F47245F036C00505217 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8C768F28245ECFB000505217 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8C768F4A245F052F00505217 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C768F4B245F054800505217 /* ActivityIndicator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = GenericsApiService;
+			packageProductDependencies = (
+				8C768F3B245EEBE800505217 /* SDWebImage */,
+			);
 			productName = GenericsApiService;
 			productReference = 8C768F1F245ECFB000505217 /* GenericsApiService.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 8C768F16245ECFB000505217;
+			packageReferences = (
+				8C768F3A245EEBE800505217 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 8C768F20245ECFB000505217 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C768F42245EFCC600505217 /* Images.swift in Sources */,
 				8C768F27245ECFB000505217 /* ViewController.swift in Sources */,
 				8C768F23245ECFB000505217 /* AppDelegate.swift in Sources */,
+				8C768F49245F039700505217 /* PostResponseViewController.swift in Sources */,
+				8C768F37245EE93200505217 /* GetResultViewController.swift in Sources */,
+				8C768F44245F014300505217 /* User.swift in Sources */,
+				8C768F4C245F054800505217 /* ActivityIndicator.swift in Sources */,
 				8C768F25245ECFB000505217 /* SceneDelegate.swift in Sources */,
+				8C768F3F245EFB9600505217 /* APIService.swift in Sources */,
+				8C768F39245EE9BC00505217 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X8YE27GARE;
+				DEVELOPMENT_TEAM = AX7T572QW5;
 				INFOPLIST_FILE = GenericsApiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X8YE27GARE;
+				DEVELOPMENT_TEAM = AX7T572QW5;
 				INFOPLIST_FILE = GenericsApiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C768F3A245EEBE800505217 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C768F3B245EEBE800505217 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C768F3A245EEBE800505217 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C768F17245ECFB000505217 /* Project object */;
 }
