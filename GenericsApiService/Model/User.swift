@@ -3,7 +3,7 @@
 //  GenericsApiService
 //
 //  Created by Nabin Shrestha on 5/3/20.
-//  Copyright © 2020 F1Soft International Pvt. Ltd. All rights reserved.
+//  Copyright © 2020 Nabin Shrestha. All rights reserved.
 //
 
 import Foundation
