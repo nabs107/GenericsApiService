@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C28E85A2461A3F3008EA492 /* Data + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28E8592461A3F3008EA492 /* Data + Extensions.swift */; };
+		8C28E85C2461A40B008EA492 /* Dictionary + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28E85B2461A40B008EA492 /* Dictionary + Extensions.swift */; };
 		8C768F23245ECFB000505217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F22245ECFB000505217 /* AppDelegate.swift */; };
 		8C768F25245ECFB000505217 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F24245ECFB000505217 /* SceneDelegate.swift */; };
 		8C768F27245ECFB000505217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C768F26245ECFB000505217 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C28E8592461A3F3008EA492 /* Data + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data + Extensions.swift"; sourceTree = "<group>"; };
+		8C28E85B2461A40B008EA492 /* Dictionary + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary + Extensions.swift"; sourceTree = "<group>"; };
 		8C768F1F245ECFB000505217 /* GenericsApiService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericsApiService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C768F22245ECFB000505217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C768F24245ECFB000505217 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C28E8582461A3DD008EA492 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C28E8592461A3F3008EA492 /* Data + Extensions.swift */,
+				8C28E85B2461A40B008EA492 /* Dictionary + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8C768F16245ECFB000505217 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		8C768F21245ECFB000505217 /* GenericsApiService */ = {
 			isa = PBXGroup;
 			children = (
+				8C28E8582461A3DD008EA492 /* Extensions */,
 				8C768F4A245F052F00505217 /* Helpers */,
 				8C768F47245F036C00505217 /* Storyboards */,
 				8C768F46245F035E00505217 /* Cells */,
@@ -220,6 +234,8 @@
 				8C768F23245ECFB000505217 /* AppDelegate.swift in Sources */,
 				8C768F49245F039700505217 /* PostResponseViewController.swift in Sources */,
 				8C768F37245EE93200505217 /* GetResultViewController.swift in Sources */,
+				8C28E85C2461A40B008EA492 /* Dictionary + Extensions.swift in Sources */,
+				8C28E85A2461A3F3008EA492 /* Data + Extensions.swift in Sources */,
 				8C768F44245F014300505217 /* User.swift in Sources */,
 				8C768F4C245F054800505217 /* ActivityIndicator.swift in Sources */,
 				8C768F25245ECFB000505217 /* SceneDelegate.swift in Sources */,
